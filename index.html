@@ -2,14 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Paycheck Take Home Calculator | PaycheckTakeHome.com</title>
+  <title>Paycheck Take Home Calculator | Estimate Your Net Pay After Taxes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="PaycheckTakeHome.com helps you estimate your take-home pay after taxes and deductions. Simple net pay calculator for salary or hourly workers in every US state." />
-  <link rel="icon" href="favicon.ico" />
+  <meta name="description" content="Free paycheck take home calculator to estimate your net pay after federal, state, and FICA taxes. Works for salary and hourly employees in all 50 US states. See your paycheck after taxes and deductions in seconds." />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://paychecktakehome.com/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="alternate icon" href="/favicon.ico" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Paycheck Take Home Calculator | PaycheckTakeHome.com" />
+  <meta property="og:description" content="Estimate your paycheck take home pay after taxes, deductions, 401(k), and benefits. Free net pay calculator for all 50 US states." />
+  <meta property="og:url" content="https://paychecktakehome.com/" />
+  <meta property="og:site_name" content="PaycheckTakeHome.com" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Paycheck Take Home Calculator" />
+  <meta name="twitter:description" content="See how much of your paycheck you actually take home after taxes and deductions. Free net pay calculator." />
+
+  <!-- Indexing -->
+  <meta name="robots" content="index,follow" />
 
   <!-- Google AdSense (your snippet) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8509398148166447"
      crossorigin="anonymous"></script>
+
+  <!-- Structured data (WebSite + WebApplication + FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://paychecktakehome.com/#website",
+        "url": "https://paychecktakehome.com/",
+        "name": "PaycheckTakeHome.com",
+        "description": "Paycheck take home calculator to estimate your net pay after taxes and deductions.",
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://paychecktakehome.com/#app",
+        "name": "Paycheck Take Home Calculator",
+        "url": "https://paychecktakehome.com/",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "description": "Online paycheck calculator to estimate your take home pay after taxes and deductions for salary or hourly employees in all 50 US states.",
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://paychecktakehome.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How accurate is this take-home pay calculator?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This paycheck take home calculator uses simplified U.S. federal tax brackets, approximate state income tax rates, and standard Social Security and Medicare rates to estimate your net pay. It is designed for quick planning only; your actual paycheck may differ based on your employer's specific payroll setup, local taxes, and your full list of deductions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What taxes are included in my net pay estimate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Your estimated take-home pay includes federal income tax, an approximate state income tax, Social Security, and Medicare. It does not include city or local taxes, special surtaxes, or unique employer-specific deductions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between gross pay and net (take-home) pay?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Gross pay is the total amount you earn before any taxes or deductions are taken out. Net pay, or take-home pay, is the amount that is left after taxes, pre-tax deductions like 401(k) and HSA, and post-tax deductions such as benefits and other after-tax items."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do 401(k) contributions affect my paycheck?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "401(k) contributions are usually pre-tax, which means they are taken out of your paycheck before income tax is calculated. This can reduce your taxable income, lower your federal and state income taxes, and help you save for retirement, but it also reduces your take-home pay today."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I calculate my take-home pay?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A simple way to calculate your take-home pay is to start with your gross pay for the period, subtract any pre-tax deductions such as 401(k) and HSA, estimate federal and state income taxes plus Social Security and Medicare, then subtract any post-tax deductions such as benefits. This calculator automates that estimate for you."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
   <style>
     :root {
@@ -110,6 +204,11 @@
     .card h2 {
       margin: 0 0 10px;
       font-size: 1.1rem;
+    }
+
+    .card h3 {
+      margin: 16px 0 6px;
+      font-size: 0.98rem;
     }
 
     .card p.helper {
@@ -448,6 +547,47 @@
       text-align: center;
     }
 
+    /* Example scenarios & state section */
+    .seo-section {
+      margin-top: 24px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .seo-section h2 {
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+
+    .seo-section h3 {
+      font-size: 0.94rem;
+    }
+
+    .seo-scenarios-list {
+      list-style: disc;
+      padding-left: 18px;
+      margin: 6px 0 10px;
+    }
+
+    .state-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 12px;
+      padding: 0;
+      margin: 4px 0 0;
+      list-style: none;
+      font-size: 0.8rem;
+    }
+
+    .state-list li {
+      color: #4b5563;
+    }
+
+    .state-list span {
+      color: #111827;
+      font-weight: 600;
+    }
+
     /* Make breakdown table scrollable on small screens */
     .table-wrapper {
       margin-top: 8px;
@@ -460,19 +600,22 @@
     <header>
       <div class="pill">
         <span class="dots"><span></span><span></span><span></span></span>
-        PaycheckTakeHome.com · Simple US net pay estimator
+        PaycheckTakeHome.com · Free paycheck take home calculator
       </div>
       <h1>Paycheck Take Home Calculator</h1>
       <p class="subheading">
-        Estimate your paycheck after taxes and deductions. Choose salary or hourly, select your state, and see your net pay in seconds.
+        Use this free paycheck take home calculator to estimate your net pay after federal, state, and FICA taxes.
+        Works for salary and hourly employees in all 50 US states.
       </p>
     </header>
 
     <main class="layout">
       <!-- Calculator Card -->
       <section class="card" aria-labelledby="calc-heading">
-        <h2 id="calc-heading">Enter your pay details</h2>
-        <p class="helper">We’ll estimate your federal, state, and FICA taxes using simplified assumptions for the current tax year.</p>
+        <h2 id="calc-heading">Estimate your paycheck after taxes</h2>
+        <p class="helper">
+          Enter your gross pay, state, pay frequency, and deductions. This paycheck calculator will estimate your take-home pay after taxes and deductions.
+        </p>
 
         <!-- Pay type -->
         <div class="section-label">Pay type</div>
@@ -490,7 +633,7 @@
         <!-- Income rows -->
         <div id="salaryRow" class="form-row">
           <div class="form-group">
-            <label for="annualSalary">Annual salary</label>
+            <label for="annualSalary">Annual salary (gross)</label>
             <input type="number" id="annualSalary" placeholder="e.g. 75000" min="0" step="1000" />
             <small>Before taxes and deductions</small>
           </div>
@@ -519,7 +662,7 @@
             </select>
           </div>
           <div class="form-group">
-            <label for="state">State</label>
+            <label for="state">State (for state income tax)</label>
             <select id="state">
               <option value="PA" selected>Pennsylvania</option>
               <option value="AL">Alabama</option>
@@ -629,7 +772,7 @@
         </div>
 
         <p class="disclaimer">
-          This tool provides a simplified estimate only and does not replace tax or payroll advice. Actual paychecks may differ.
+          This take-home pay calculator provides a simplified estimate only and does not replace tax or payroll advice. Actual paychecks may differ.
         </p>
 
         <button id="calculateBtn" class="btn-primary" type="button">
@@ -641,6 +784,11 @@
 
       <!-- Results Card -->
       <section class="card" aria-live="polite">
+        <h2>Take-home pay estimate</h2>
+        <p class="helper">
+          This section shows your estimated net pay per paycheck, per month, and per year based on your inputs.
+        </p>
+
         <div class="result-header">
           <div>
             <p class="net-pay" id="netPerPayDisplay">$0.00</p>
@@ -708,12 +856,12 @@
         </div>
 
         <div class="result-footnote" id="resultFootnote">
-          Enter your information on the left and click “Calculate” to see your estimated net pay.
+          Enter your information on the left and click “Calculate” to see your estimated paycheck after taxes and deductions.
         </div>
 
         <!-- AdSense slot -->
         <div class="adsense-slot">
-          <!-- AdSense unit placeholder. Uncomment data-ad-slot and set your slot ID when ready.
+          <!-- AdSense unit placeholder. Uncomment data-ad-slot and set your slot ID when you're ready.
           <ins class="adsbygoogle"
                style="display:block"
                data-ad-client="ca-pub-8509398148166447"
@@ -729,49 +877,184 @@
       </section>
     </main>
 
-    <!-- FAQ / SEO content -->
-    <section class="card faq-card">
-      <h2>Frequently asked questions</h2>
+    <!-- SEO Content: How it works + scenarios + FAQ -->
+    <section class="card faq-card seo-section">
+      <h2>How this paycheck take home calculator works</h2>
+      <p>
+        This paycheck take home calculator starts with your gross pay, subtracts any pre-tax deductions such as 401(k) and HSA,
+        then estimates federal income tax, state income tax, Social Security, and Medicare. Finally, it subtracts any post-tax
+        deductions you enter, such as health insurance or other benefits, to estimate your net pay or take-home pay.
+      </p>
+
+      <h3>What’s included in your net pay calculation</h3>
+      <p>
+        For most users in the United States, this net pay calculator includes:
+      </p>
+      <ul class="seo-scenarios-list">
+        <li>Gross salary or hourly pay converted to annual income</li>
+        <li>Estimated federal income tax based on simplified tax brackets</li>
+        <li>Approximate state income tax using an effective rate for your state</li>
+        <li>Standard Social Security and Medicare (FICA) payroll taxes</li>
+        <li>Optional pre-tax deductions: 401(k), HSA/FSA, and other pre-tax benefits</li>
+        <li>Optional post-tax deductions: health insurance, dental, and other after-tax items</li>
+      </ul>
+
+      <h2>Example take-home pay calculations</h2>
+      <p>
+        Here are a few sample scenarios to show how this paycheck calculator can estimate your take-home pay:
+      </p>
+
+      <h3>Example 1: $50,000 salary in Pennsylvania</h3>
+      <p>
+        A single filer earning $50,000 per year in Pennsylvania, paid bi-weekly with no pre-tax deductions,
+        might see an estimated take-home pay of roughly 70–78% of gross pay after federal, state, and FICA taxes.
+        Exact numbers depend on your specific deductions, but this tool will give you a quick paycheck after-tax estimate.
+      </p>
+
+      <h3>Example 2: $75,000 salary in California with 5% 401(k)</h3>
+      <p>
+        A single filer in California earning $75,000 per year and contributing 5% of each paycheck to a 401(k) will reduce
+        their taxable income while also lowering their take-home pay. This calculator helps you see how much of your paycheck
+        you keep after your 401(k) contribution and California state income taxes.
+      </p>
+
+      <h3>Example 3: $20 per hour in Texas, 40 hours per week</h3>
+      <p>
+        An hourly worker making $20 per hour and working 40 hours per week earns about $41,600 per year before taxes.
+        In a state like Texas with no state income tax, your take-home pay after federal tax and FICA will generally be
+        higher than in a state that taxes income. Use this tool as a paycheck calculator to see your net pay per paycheck.
+      </p>
+    </section>
+
+    <!-- FAQ / People also ask -->
+    <section class="card faq-card" id="faq">
+      <h2>Frequently asked questions about take-home pay</h2>
 
       <details>
         <summary>How accurate is this take-home pay calculator?</summary>
         <p>
-          This tool uses simplified U.S. federal tax brackets, approximate state income tax rates, and standard Social Security and Medicare rates to estimate your net pay.
-          Your actual paycheck may differ based on your employer’s specific payroll settings, local taxes, pre-tax benefits, and other factors.
+          This tool uses simplified U.S. federal tax brackets, approximate state income tax rates, and standard Social Security and Medicare rates
+          to estimate your net pay. Your actual paycheck may differ based on your employer’s payroll settings, local taxes, pre-tax benefits,
+          and other factors. Always refer to your actual pay stub for official numbers.
         </p>
       </details>
 
       <details>
-        <summary>What taxes are included in the estimate?</summary>
+        <summary>What taxes are included in this paycheck calculator?</summary>
         <p>
-          We include estimated federal income tax, state income tax, Social Security, and Medicare. We do not include city or local taxes, special surtaxes, or unique deductions that may apply to your situation.
+          This paycheck calculator includes estimated federal income tax, state income tax, Social Security, and Medicare.
+          It does not include city or local income taxes, special surtaxes, or unique deductions that might apply to your specific situation.
         </p>
       </details>
 
       <details>
-        <summary>What is the difference between gross pay and net (take-home) pay?</summary>
+        <summary>What is the difference between gross pay and net pay?</summary>
         <p>
-          Gross pay is what you earn before any taxes or deductions. Net pay is what actually lands in your bank account after taxes and any pre-tax or post-tax deductions.
+          Gross pay is what you earn before any taxes or deductions are taken out. Net pay (your take-home pay) is what is left
+          after federal and state taxes, Social Security and Medicare, and any pre-tax or post-tax deductions. This net pay calculator
+          helps you understand how much of your paycheck you actually keep.
         </p>
       </details>
 
       <details>
         <summary>How do pre-tax deductions like 401(k) and HSA affect my paycheck?</summary>
         <p>
-          Pre-tax deductions are taken out before income taxes are calculated. This usually reduces your taxable income and can lower your federal and state income taxes, while still allowing you to save for retirement or medical expenses.
+          Pre-tax deductions are taken out before income taxes are calculated. Contributing to a 401(k) or HSA lowers your taxable income,
+          which can reduce your federal and state income taxes. However, those contributions also reduce your immediate take-home pay.
+          This calculator lets you adjust your pre-tax amounts to see the impact on your paycheck.
         </p>
       </details>
 
       <details>
-        <summary>Should I use this instead of my paycheck or tax software?</summary>
+        <summary>How much will I take home if I earn $50,000 per year?</summary>
         <p>
-          No. This calculator is meant for quick planning and rough estimates only. For official numbers, rely on your employer’s payroll, your pay stubs, and tax software or a tax professional.
+          The amount you take home on a $50,000 salary depends on your filing status, state, pay frequency, and deductions.
+          In many cases, your net pay may fall around 70–80% of your gross pay after federal, state, and FICA taxes.
+          Use this calculator to plug in your exact situation and see a personalized paycheck estimate.
+        </p>
+      </details>
+
+      <details>
+        <summary>How do I calculate my paycheck after taxes?</summary>
+        <p>
+          To calculate your paycheck after taxes manually, start with your gross pay for the period, subtract pre-tax deductions,
+          estimate federal and state income taxes, calculate Social Security and Medicare, then subtract any post-tax deductions.
+          This online paycheck takes-home calculator performs that estimate automatically based on your inputs.
+        </p>
+      </details>
+
+      <details>
+        <summary>Is net pay the same as take-home pay?</summary>
+        <p>
+          Yes. Net pay and take-home pay usually refer to the same thing: the amount of money that actually hits your bank account
+          after all taxes and deductions are taken out of your paycheck.
         </p>
       </details>
     </section>
 
+    <!-- State SEO section -->
+    <section class="card seo-section">
+      <h2>State-specific paycheck take home calculations</h2>
+      <p>
+        This net pay calculator works in every U.S. state. Choose your state in the dropdown above to estimate your paycheck after taxes:
+      </p>
+      <ul class="state-list">
+        <li><span>AL</span> – Alabama paycheck calculator</li>
+        <li><span>AK</span> – Alaska paycheck calculator</li>
+        <li><span>AZ</span> – Arizona paycheck calculator</li>
+        <li><span>AR</span> – Arkansas paycheck calculator</li>
+        <li><span>CA</span> – California paycheck calculator</li>
+        <li><span>CO</span> – Colorado paycheck calculator</li>
+        <li><span>CT</span> – Connecticut paycheck calculator</li>
+        <li><span>DE</span> – Delaware paycheck calculator</li>
+        <li><span>DC</span> – District of Columbia paycheck calculator</li>
+        <li><span>FL</span> – Florida paycheck calculator</li>
+        <li><span>GA</span> – Georgia paycheck calculator</li>
+        <li><span>HI</span> – Hawaii paycheck calculator</li>
+        <li><span>ID</span> – Idaho paycheck calculator</li>
+        <li><span>IL</span> – Illinois paycheck calculator</li>
+        <li><span>IN</span> – Indiana paycheck calculator</li>
+        <li><span>IA</span> – Iowa paycheck calculator</li>
+        <li><span>KS</span> – Kansas paycheck calculator</li>
+        <li><span>KY</span> – Kentucky paycheck calculator</li>
+        <li><span>LA</span> – Louisiana paycheck calculator</li>
+        <li><span>ME</span> – Maine paycheck calculator</li>
+        <li><span>MD</span> – Maryland paycheck calculator</li>
+        <li><span>MA</span> – Massachusetts paycheck calculator</li>
+        <li><span>MI</span> – Michigan paycheck calculator</li>
+        <li><span>MN</span> – Minnesota paycheck calculator</li>
+        <li><span>MS</span> – Mississippi paycheck calculator</li>
+        <li><span>MO</span> – Missouri paycheck calculator</li>
+        <li><span>MT</span> – Montana paycheck calculator</li>
+        <li><span>NE</span> – Nebraska paycheck calculator</li>
+        <li><span>NV</span> – Nevada paycheck calculator</li>
+        <li><span>NH</span> – New Hampshire paycheck calculator</li>
+        <li><span>NJ</span> – New Jersey paycheck calculator</li>
+        <li><span>NM</span> – New Mexico paycheck calculator</li>
+        <li><span>NY</span> – New York paycheck calculator</li>
+        <li><span>NC</span> – North Carolina paycheck calculator</li>
+        <li><span>ND</span> – North Dakota paycheck calculator</li>
+        <li><span>OH</span> – Ohio paycheck calculator</li>
+        <li><span>OK</span> – Oklahoma paycheck calculator</li>
+        <li><span>OR</span> – Oregon paycheck calculator</li>
+        <li><span>PA</span> – Pennsylvania paycheck calculator</li>
+        <li><span>RI</span> – Rhode Island paycheck calculator</li>
+        <li><span>SC</span> – South Carolina paycheck calculator</li>
+        <li><span>SD</span> – South Dakota paycheck calculator</li>
+        <li><span>TN</span> – Tennessee paycheck calculator</li>
+        <li><span>TX</span> – Texas paycheck calculator</li>
+        <li><span>UT</span> – Utah paycheck calculator</li>
+        <li><span>VT</span> – Vermont paycheck calculator</li>
+        <li><span>VA</span> – Virginia paycheck calculator</li>
+        <li><span>WA</span> – Washington paycheck calculator</li>
+        <li><span>WV</span> – West Virginia paycheck calculator</li>
+        <li><span>WI</span> – Wisconsin paycheck calculator</li>
+        <li><span>WY</span> – Wyoming paycheck calculator</li>
+      </ul>
+    </section>
+
     <p class="footer-note">
-      © <span id="yearSpan"></span> PaycheckTakeHome.com · This calculator is for informational purposes only and does not constitute financial, tax, or legal advice.
+      © <span id="yearSpan"></span> PaycheckTakeHome.com · This paycheck take-home calculator is for informational purposes only and does not constitute financial, tax, or legal advice.
     </p>
   </div>
 
@@ -806,11 +1089,10 @@
       WV: 0.04, WI: 0.045, WY: 0.0
     };
 
-    // Simple US federal tax estimate using rough 2024 brackets
+    // Simple US federal tax estimate using rough brackets
     function estimateFederalTax(annualTaxable, filingStatus) {
       if (annualTaxable <= 0) return 0;
 
-      // Brackets: [ [limit, rate], ... ] for each status
       let brackets;
       if (filingStatus === 'married') {
         brackets = [
@@ -823,7 +1105,6 @@
           [Infinity, 0.37]
         ];
       } else {
-        // single
         brackets = [
           [11600, 0.10],
           [47150, 0.12],
@@ -900,7 +1181,7 @@
       const taxableAnnual = Math.max(0, grossAnnual - pretaxAnnual);
 
       // FICA (approximate)
-      const ssWageBase = 168600; // approximate for recent tax year
+      const ssWageBase = 168600;
       const ssTaxAnnual = Math.min(grossAnnual, ssWageBase) * 0.062;
       const medicareTaxAnnual = grossAnnual * 0.0145;
 
@@ -953,7 +1234,7 @@
         `Per paycheck · Monthly: <strong>${fmt.format(netMonthly)}</strong> · Yearly: <strong>${fmt.format(netAnnual)}</strong>`;
 
       document.getElementById('resultFootnote').innerHTML =
-        `Based on your inputs, we estimated federal, state, and FICA taxes plus your selected deductions. This is a rough estimate only and may differ from your actual paychecks.`;
+        `Based on your inputs, this paycheck take-home calculator estimated federal, state, and FICA taxes plus your selected deductions. This is a rough estimate only and may differ from your actual paychecks.`;
     }
 
     // UI wiring
@@ -979,7 +1260,6 @@
         }
       });
 
-      // Toggle sections
       const pretaxToggle = document.getElementById('pretaxToggle');
       const pretaxContent = document.getElementById('pretaxContent');
       pretaxToggle.addEventListener('click', () => {
@@ -996,7 +1276,6 @@
 
       document.getElementById('calculateBtn').addEventListener('click', calculate);
 
-      // Set footer year
       const yearSpan = document.getElementById('yearSpan');
       if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();

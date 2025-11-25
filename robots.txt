@@ -1,4 +1,5 @@
 User-agent: *
-Allow: /
+Disallow:
 
+# Allow everything and point to sitemap
 Sitemap: https://paychecktakehome.com/sitemap.xml

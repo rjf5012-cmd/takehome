@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>How Paychecks Work | Gross Pay vs Net Pay, Taxes, Deductions (2026)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Learn how paychecks work in plain English: gross pay vs net pay, federal and state withholding, FICA (Social Security + Medicare), and common deductions like 401(k) and health insurance." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://paychecktakehome.com/how-paychecks-work.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="alternate icon" href="/favicon.ico" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How Paychecks Work (Gross vs Net, Taxes & Deductions)" />
+  <meta property="og:description" content="A simple guide to gross pay vs net pay, paycheck taxes (federal/state/FICA), and deductions like 401(k), HSA, and benefits." />
+  <meta property="og:url" content="https://paychecktakehome.com/how-paychecks-work.html" />
+  <meta property="og:site_name" content="PaycheckTakeHome.com" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How Paychecks Work" />
+  <meta name="twitter:description" content="Gross vs net pay, withholding, FICA, and deductions—explained clearly." />
+
+  <!-- Indexing -->
+  <meta name="robots" content="index,follow" />
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8509398148166447"
+     crossorigin="anonymous"></script>
+
+  <!-- Structured Data: Article + Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://paychecktakehome.com/how-paychecks-work.html#breadcrumbs",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://paychecktakehome.com/" },
+          { "@type": "ListItem", "position": 2, "name": "How Paychecks Work", "item": "https://paychecktakehome.com/how-paychecks-work.html" }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://paychecktakehome.com/how-paychecks-work.html#article",
+        "headline": "How Paychecks Work: Gross Pay vs Net Pay, Taxes, and Deductions",
+        "description": "A plain-English guide to how paychecks work in the U.S.: gross pay vs net pay, withholding, FICA, and common deductions like 401(k) and benefits.",
+        "author": { "@type": "Organization", "name": "PaycheckTakeHome.com" },
+        "publisher": { "@type": "Organization", "name": "PaycheckTakeHome.com" },
+        "mainEntityOfPage": "https://paychecktakehome.com/how-paychecks-work.html",
+        "datePublished": "2026-01-08",
+        "dateModified": "2026-01-08",
+        "inLanguage": "en-US"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card-bg: #ffffff;
+      --accent: #2563eb;
+      --accent-soft: #e0ebff;
+      --accent-dark: #1d4ed8;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --shadow-soft: 0 20px 40px rgba(15, 23, 42, 0.08);
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #eef2ff 0%, #f9fafb 50%, #f3f4ff 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    header h1 {
+      font-size: clamp(1.9rem, 3vw, 2.4rem);
+      margin: 0 0 10px;
+      letter-spacing: -0.03em;
+    }
+
+    header p.subheading {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    header .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.08);
+      color: var(--accent-dark);
+      font-size: 0.78rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    header .pill span.dots {
+      display: inline-flex;
+      gap: 2px;
+    }
+
+    header .pill span.dots span {
+      width: 4px;
+      height: 4px;
+      border-radius: 999px;
+      background: var(--accent-dark);
+      opacity: 0.7;
+    }
+
+    .top-links {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 12px 0 20px;
+    }
+
+    .top-links a {
+      font-size: 0.82rem;
+      color: var(--accent-dark);
+      background: rgba(37, 99, 235, 0.06);
+      border: 1px solid rgba(37, 99, 235, 0.12);
+      padding: 6px 10px;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: transform 0.12s ease, background 0.12s ease;
+    }
+
+    .top-links a:hover {
+      transform: translateY(-1px);
+      background: rgba(37, 99, 235, 0.10);
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-soft);
+      padding: 20px 18px;
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      margin-bottom: 16px;
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 1.15rem;
+    }
+
+    .card h3 {
+      margin: 16px 0 6px;
+      font-size: 1rem;
+    }
+
+    .meta {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .callout {
+      background: rgba(22, 163, 74, 0.06);
+      border: 1px solid rgba(22, 163, 74, 0.12);
+      border-radius: 12px;
+      padding: 12px 12px;
+      margin: 12px 0;
+      color: #14532d;
+      font-size: 0.9rem;
+    }
+
+    .muted-box {
+      background: #f9fafb;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px;
+      margin: 12px 0;
+      color: #374151;
+    }
+
+    .bullets {
+      margin: 6px 0 10px;
+      padding-left: 18px;
+      color: #374151;
+    }
+
+    .bullets li { margin: 6px 0; }
+
+    .mini-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 720px) {
+      .mini-grid { grid-template-columns: 1fr; }
+    }
+
+    .mini-card {
+      background: #f9fafb;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px;
+    }
+
+    .mini-card strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+
+    .toc {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 14px;
+      margin-top: 8px;
+    }
+
+    @media (max-width: 720px) {
+      .toc { grid-template-columns: 1fr; }
+    }
+
+    .toc a {
+      display: block;
+      padding: 10px 10px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-decoration: none;
+      color: #374151;
+      background: #f9fafb;
+      transition: transform 0.12s ease, border-color 0.12s ease, background 0.12s ease;
+      font-size: 0.92rem;
+    }
+
+    .toc a:hover {
+      transform: translateY(-1px);
+      border-color: rgba(37, 99, 235, 0.25);
+      background: #ffffff;
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      border: 1px solid rgba(37, 99, 235, 0.25);
+      color: #fff;
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+      white-space: nowrap;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 16px 30px rgba(37, 99, 235, 0.33);
+    }
+
+    .btn.secondary {
+      background: #ffffff;
+      color: var(--accent-dark);
+      border: 1px solid rgba(37, 99, 235, 0.22);
+      box-shadow: none;
+    }
+
+    .btn.secondary:hover {
+      background: rgba(37, 99, 235, 0.06);
+      transform: translateY(-1px);
+    }
+
+    details {
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      margin: 10px 0;
+      background: #f9fafb;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 700;
+      color: #374151;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    summary::before {
+      content: "›";
+      display: inline-block;
+      margin-right: 8px;
+      transform: rotate(90deg);
+      transition: transform 0.15s ease;
+      opacity: 0.6;
+    }
+
+    details[open] summary::before { transform: rotate(270deg); }
+
+    details p { margin: 10px 0 0; color: var(--muted); }
+
+    .footer-note {
+      margin-top: 18px;
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .footer-note a {
+      color: var(--accent-dark);
+      text-decoration: none;
+    }
+
+    .footer-note a:hover { text-decoration: underline; }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <div class="pill">
+        <span class="dots"><span></span><span></span><span></span></span>
+        PaycheckTakeHome.com · Education
+      </div>
+      <h1>How Paychecks Work (Gross vs Net, Taxes & Deductions)</h1>
+      <p class="subheading">
+        A plain-English guide to what’s on a paycheck: gross pay, withholding, FICA payroll taxes, and common deductions like 401(k) and benefits.
+      </p>
+      <div class="meta">
+        <span>Updated: <strong>Jan 8, 2026</strong></span>
+        <span>•</span>
+        <span>Read time: <strong>7–10 minutes</strong></span>
+        <span>•</span>
+        <a href="/" style="color: var(--accent-dark); text-decoration: none;">Back to the calculator</a>
+      </div>
+
+      <nav class="top-links" aria-label="Jump links">
+        <a href="#toc">Table of contents</a>
+        <a href="#gross-vs-net">Gross vs net</a>
+        <a href="#withholding">Withholding</a>
+        <a href="#fica">FICA</a>
+        <a href="#deductions">Deductions</a>
+        <a href="#common-questions">Common questions</a>
+      </nav>
+    </header>
+
+    <section class="card">
+      <h2>Quick summary</h2>
+      <p>
+        Your paycheck is basically a math equation:
+        <strong>Gross pay</strong> minus <strong>deductions</strong> minus <strong>taxes</strong> equals <strong>net pay</strong>
+        (your take-home pay).
+      </p>
+
+      <div class="mini-grid" role="list">
+        <div class="mini-card" role="listitem">
+          <strong>Gross pay</strong>
+          What you earned this pay period before anything is taken out.
+        </div>
+        <div class="mini-card" role="listitem">
+          <strong>Net pay (take-home pay)</strong>
+          What actually lands in your bank account after all taxes and deductions.
+        </div>
+        <div class="mini-card" role="listitem">
+          <strong>Withholding (income tax)</strong>
+          An estimate of federal/state income tax taken from each paycheck based on your W-4 and payroll rules.
+        </div>
+        <div class="mini-card" role="listitem">
+          <strong>FICA (payroll tax)</strong>
+          Social Security + Medicare taxes, typically withheld on most wages.
+        </div>
+      </div>
+
+      <div class="cta-row">
+        <a class="btn" href="/">Use the Paycheck Take Home Calculator</a>
+        <a class="btn secondary" href="/how-paychecks-work.html#common-questions">Jump to common questions</a>
+      </div>
+    </section>
+
+    <section class="card" id="toc">
+      <h2>Table of contents</h2>
+      <div class="toc" aria-label="Table of contents">
+        <a href="#gross-vs-net">1) Gross pay vs net pay (what each means)</a>
+        <a href="#pay-frequency">2) Pay frequency (weekly vs biweekly vs semi-monthly)</a>
+        <a href="#withholding">3) Federal & state withholding (income tax)</a>
+        <a href="#fica">4) FICA payroll taxes (Social Security & Medicare)</a>
+        <a href="#deductions">5) Common paycheck deductions (401(k), HSA, benefits)</a>
+        <a href="#why-different">6) Why two people with the same salary take home different pay</a>
+        <a href="#checklist">7) Pay stub checklist (what to look for)</a>
+        <a href="#common-questions">8) Common paycheck questions</a>
+      </div>
+    </section>
+
+    <section class="card" id="gross-vs-net">
+      <h2>1) Gross pay vs net pay</h2>
+      <p>
+        <strong>Gross pay</strong> is your earnings before taxes and deductions. If you’re salaried, it’s your annual salary divided by
+        your pay periods. If you’re hourly, it’s your hourly rate times your hours worked (plus any overtime, if applicable).
+      </p>
+      <p>
+        <strong>Net pay</strong> (take-home pay) is what’s left after your paycheck has deductions and taxes removed.
+        It’s the “deposit” amount you actually receive.
+      </p>
+
+      <div class="muted-box">
+        <strong>Rule of thumb:</strong> Net pay is often in the ~65%–85% range of gross pay for many workers, but it can be higher or lower
+        depending on state, benefits, retirement contributions, and withholding choices.
+      </div>
+    </section>
+
+    <section class="card" id="pay-frequency">
+      <h2>2) Pay frequency (weekly vs biweekly vs semi-monthly)</h2>
+      <p>
+        Pay frequency changes the size of each paycheck, but not your total annual pay. Here are the most common options:
+      </p>
+      <ul class="bullets">
+        <li><strong>Weekly:</strong> 52 paychecks per year</li>
+        <li><strong>Biweekly:</strong> 26 paychecks per year (every 2 weeks)</li>
+        <li><strong>Semi-monthly:</strong> 24 paychecks per year (twice per month)</li>
+        <li><strong>Monthly:</strong> 12 paychecks per year</li>
+      </ul>
+      <div class="callout" role="note">
+        <strong>Biweekly gotcha:</strong> You’ll have two “extra” paychecks in a 52-week year compared with monthly pay. That can help budgeting
+        (or create surprises if your bills are set up monthly).
+      </div>
+    </section>
+
+    <section class="card" id="withholding">
+      <h2>3) Federal & state withholding (income tax)</h2>
+      <p>
+        “Withholding” is the income tax your employer sends to the government on your behalf. It’s not your final tax bill—think of it as
+        a running estimate based on your <strong>W-4</strong> (federal) and your state withholding form (if your state has one).
+      </p>
+
+      <h3>Why withholding doesn’t always match your final taxes</h3>
+      <ul class="bullets">
+        <li>Your paycheck withholding assumes a steady income pattern for the year.</li>
+        <li>Bonuses, commissions, overtime, and job changes can alter your real annual income.</li>
+        <li>Tax credits, deductions, and other household income are handled when you file your return.</li>
+      </ul>
+
+      <div class="muted-box">
+        <strong>Plain English:</strong> Your paycheck withholding is an estimate. Your tax return is the reconciliation.
+      </div>
+    </section>
+
+    <section class="card" id="fica">
+      <h2>4) FICA payroll taxes (Social Security & Medicare)</h2>
+      <p>
+        FICA is a separate category from income tax. For many workers, FICA is withheld on most wages:
+      </p>
+      <ul class="bullets">
+        <li><strong>Social Security:</strong> a percentage of wages up to an annual wage base (a cap that can change each year).</li>
+        <li><strong>Medicare:</strong> a percentage of wages (and additional rules may apply at higher incomes).</li>
+      </ul>
+
+      <div class="callout" role="note">
+        <strong>Why it surprises people:</strong> Even if your federal income tax withholding is low, FICA can still be meaningful—especially
+        for lower and middle incomes—because it’s generally applied on wages regardless of deductions/credits.
+      </div>
+    </section>
+
+    <section class="card" id="deductions">
+      <h2>5) Common paycheck deductions</h2>
+      <p>
+        Deductions are the amounts taken out of your paycheck for benefits or programs. They usually appear on your pay stub as separate line items.
+      </p>
+
+      <h3>Pre-tax deductions (often reduce income tax)</h3>
+      <ul class="bullets">
+        <li><strong>401(k) (traditional):</strong> commonly reduces taxable income for income tax (but still reduces take-home pay today).</li>
+        <li><strong>HSA/FSA:</strong> often pre-tax depending on the plan.</li>
+        <li><strong>Other cafeteria plan benefits:</strong> some health premiums and benefits can be pre-tax.</li>
+      </ul>
+
+      <h3>Post-tax deductions (do not reduce income tax)</h3>
+      <ul class="bullets">
+        <li>Some benefit premiums</li>
+        <li>After-tax retirement contributions (e.g., Roth 401(k) contributions)</li>
+        <li>Other after-tax programs (varies by employer)</li>
+      </ul>
+
+      <div class="muted-box">
+        <strong>Important:</strong> Whether a benefit is “pre-tax” or “post-tax” depends on your employer’s plan setup. Your pay stub usually labels
+        this, or payroll/HR can confirm.
+      </div>
+    </section>
+
+    <section class="card" id="why-different">
+      <h2>6) Why two people with the same salary take home different pay</h2>
+      <p>
+        It’s common for two people earning the same salary to have different take-home pay. The biggest drivers are:
+      </p>
+      <ul class="bullets">
+        <li><strong>State and local taxes:</strong> living/working location matters (and local taxes can apply in some areas).</li>
+        <li><strong>Benefits:</strong> health plan choice and family coverage can change premiums a lot.</li>
+        <li><strong>Retirement savings:</strong> 0% vs 8% 401(k) contribution is a major take-home difference.</li>
+        <li><strong>W-4 choices:</strong> filing status, dependents, and additional withholding impact federal withholding.</li>
+        <li><strong>Pay frequency:</strong> changes each-check size even if annual pay is identical.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="checklist">
+      <h2>7) Pay stub checklist: what to look for</h2>
+      <p>
+        If your paycheck seems off, use this checklist before assuming payroll made a mistake:
+      </p>
+      <ul class="bullets">
+        <li><strong>Gross pay:</strong> does it match your hours worked or expected salary for the period?</li>
+        <li><strong>Retirement:</strong> did your 401(k) percentage change, or did auto-escalation kick in?</li>
+        <li><strong>Benefits:</strong> did you switch plans, add a dependent, or start a new premium?</li>
+        <li><strong>Withholding:</strong> did your W-4/state form change, or did payroll apply a default setting?</li>
+        <li><strong>One-time items:</strong> bonuses, reimbursements, garnishments, or corrections can change the net amount.</li>
+      </ul>
+
+      <div class="callout" role="note">
+        <strong>Best move:</strong> Compare two pay stubs (a “normal” one and the surprising one) and circle what changed.
+        The line item that changed is almost always the explanation.
+      </div>
+    </section>
+
+    <section class="card" id="common-questions">
+      <h2>8) Common paycheck questions</h2>
+
+      <details>
+        <summary>Is net pay the same as take-home pay?</summary>
+        <p>
+          Usually yes. Net pay and take-home pay both refer to the amount deposited into your account after taxes and deductions.
+        </p>
+      </details>
+
+      <details>
+        <summary>Why is my bonus taxed “so much”?</summary>
+        <p>
+          Many employers withhold bonuses using different payroll withholding rules than regular wages. The withholding can look high
+          even if your final tax on the bonus is lower (your tax return reconciles this).
+        </p>
+      </details>
+
+      <details>
+        <summary>Why did my paycheck go down even though my salary didn’t change?</summary>
+        <p>
+          The most common reasons are benefit premium changes, higher retirement contributions, or updated withholding settings.
+          Compare the line items on your pay stub to see what changed.
+        </p>
+      </details>
+
+      <details>
+        <summary>Can a paycheck calculator be exact?</summary>
+        <p>
+          It can be very close, but “exact” is hard without all payroll details (local taxes, benefit pre-tax vs post-tax status,
+          employer-specific deductions, and bonus withholding rules). Use calculators for planning and comparisons, and use your pay stub
+          as the ultimate reference.
+        </p>
+      </details>
+
+      <div class="cta-row">
+        <a class="btn" href="/">Run your numbers in the calculator</a>
+        <a class="btn secondary" href="/#calculator">Back to calculator section</a>
+      </div>
+    </section>
+
+    <p class="footer-note">
+      © <span id="yearSpan"></span> PaycheckTakeHome.com ·
+      <a href="/privacy.html">Privacy Policy</a> ·
+      <a href="/terms.html">Terms of Use</a><br />
+      This article is for informational purposes only and does not constitute financial, tax, or legal advice.
+    </p>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const yearSpan = document.getElementById('yearSpan');
+      if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>

@@ -121,9 +121,7 @@
       --radius: 14px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -140,7 +138,7 @@
 
     header {
       text-align: center;
-      margin-bottom: 32px;
+      margin-bottom: 18px;
     }
 
     header h1 {
@@ -181,6 +179,30 @@
       opacity: 0.7;
     }
 
+    .top-links {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 12px 0 20px;
+    }
+
+    .top-links a {
+      font-size: 0.82rem;
+      color: var(--accent-dark);
+      background: rgba(37, 99, 235, 0.06);
+      border: 1px solid rgba(37, 99, 235, 0.12);
+      padding: 6px 10px;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: transform 0.12s ease, background 0.12s ease;
+    }
+
+    .top-links a:hover {
+      transform: translateY(-1px);
+      background: rgba(37, 99, 235, 0.10);
+    }
+
     .layout {
       display: grid;
       grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
@@ -188,9 +210,7 @@
     }
 
     @media (max-width: 768px) {
-      .layout {
-        grid-template-columns: minmax(0, 1fr);
-      }
+      .layout { grid-template-columns: minmax(0, 1fr); }
     }
 
     .card {
@@ -284,9 +304,7 @@
       transition: background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
     }
 
-    .radio-chip input {
-      margin: 0;
-    }
+    .radio-chip input { margin: 0; }
 
     .radio-chip.active {
       border-color: var(--accent);
@@ -335,14 +353,9 @@
       transition: transform 0.15s ease;
     }
 
-    .toggle-header.open span.chevron {
-      transform: rotate(90deg);
-    }
+    .toggle-header.open span.chevron { transform: rotate(90deg); }
 
-    .toggle-content {
-      display: none;
-      margin-top: 6px;
-    }
+    .toggle-content { display: none; margin-top: 6px; }
 
     .toggle-content.open {
       display: block;
@@ -350,14 +363,8 @@
     }
 
     @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(-2px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(-2px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .btn-primary {
@@ -391,9 +398,7 @@
       box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
     }
 
-    .btn-primary span.icon {
-      font-size: 1rem;
-    }
+    .btn-primary span.icon { font-size: 1rem; }
 
     .error-message {
       margin-top: 6px;
@@ -432,9 +437,7 @@
       color: var(--muted);
     }
 
-    .net-sub strong {
-      color: var(--text);
-    }
+    .net-sub strong { color: var(--text); }
 
     .breakdown-table {
       width: 100%;
@@ -443,9 +446,7 @@
       font-size: 0.82rem;
     }
 
-    .breakdown-table thead {
-      background: #f3f4ff;
-    }
+    .breakdown-table thead { background: #f3f4ff; }
 
     .breakdown-table th,
     .breakdown-table td {
@@ -456,14 +457,10 @@
     }
 
     .breakdown-table th:last-child,
-    .breakdown-table td:last-child {
-      text-align: right;
-    }
+    .breakdown-table td:last-child { text-align: right; }
 
     .breakdown-table th:nth-child(2),
-    .breakdown-table td:nth-child(2) {
-      text-align: right;
-    }
+    .breakdown-table td:nth-child(2) { text-align: right; }
 
     .breakdown-table tr.total-row td {
       font-weight: 700;
@@ -477,20 +474,55 @@
       color: var(--muted);
     }
 
-    .result-footnote strong {
+    .result-footnote strong { color: var(--text); }
+
+    /* Content sections */
+    .seo-section {
+      margin-top: 24px;
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    .seo-section h2 {
+      font-size: 1.05rem;
+      margin-bottom: 8px;
       color: var(--text);
     }
 
-    .adsense-slot {
-      margin: 16px 0 4px;
-      padding-top: 10px;
-      border-top: 1px dashed var(--border);
-      font-size: 0.74rem;
-      text-align: center;
-      color: var(--muted);
+    .seo-section h3 {
+      font-size: 0.98rem;
+      margin-top: 16px;
+      margin-bottom: 6px;
+      color: var(--text);
     }
 
-    /* FAQ & SEO content */
+    .callout {
+      background: rgba(22, 163, 74, 0.06);
+      border: 1px solid rgba(22, 163, 74, 0.12);
+      border-radius: 12px;
+      padding: 12px 12px;
+      color: #14532d;
+      margin: 12px 0;
+      font-size: 0.86rem;
+    }
+
+    .muted-box {
+      background: #f9fafb;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px;
+      margin: 12px 0;
+    }
+
+    .bullets {
+      margin: 6px 0 10px;
+      padding-left: 18px;
+    }
+
+    .bullets li { margin: 4px 0; }
+
+    /* FAQ */
     .faq-card {
       margin-top: 24px;
       padding: 18px 18px 16px;
@@ -517,9 +549,7 @@
       list-style: none;
     }
 
-    summary::-webkit-details-marker {
-      display: none;
-    }
+    summary::-webkit-details-marker { display: none; }
 
     summary::before {
       content: "›";
@@ -530,45 +560,16 @@
       opacity: 0.6;
     }
 
-    details[open] summary::before {
-      transform: rotate(270deg);
-    }
+    details[open] summary::before { transform: rotate(270deg); }
 
     details p {
       margin: 6px 0 4px;
-      font-size: 0.8rem;
+      font-size: 0.84rem;
       color: var(--muted);
+      line-height: 1.6;
     }
 
-    .footer-note {
-      margin-top: 20px;
-      font-size: 0.75rem;
-      color: var(--muted);
-      text-align: center;
-    }
-
-    /* Example scenarios & state section */
-    .seo-section {
-      margin-top: 24px;
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-
-    .seo-section h2 {
-      font-size: 1rem;
-      margin-bottom: 8px;
-    }
-
-    .seo-section h3 {
-      font-size: 0.94rem;
-    }
-
-    .seo-scenarios-list {
-      list-style: disc;
-      padding-left: 18px;
-      margin: 6px 0 10px;
-    }
-
+    /* State list */
     .state-list {
       display: flex;
       flex-wrap: wrap;
@@ -576,16 +577,14 @@
       padding: 0;
       margin: 4px 0 0;
       list-style: none;
-      font-size: 0.8rem;
+      font-size: 0.82rem;
     }
 
-    .state-list li {
-      color: #4b5563;
-    }
+    .state-list li { color: #4b5563; }
 
     .state-list span {
       color: #111827;
-      font-weight: 600;
+      font-weight: 700;
     }
 
     /* Make breakdown table scrollable on small screens */
@@ -593,8 +592,24 @@
       margin-top: 8px;
       overflow-x: auto;
     }
+
+    .footer-note {
+      margin-top: 20px;
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .footer-note a {
+      color: var(--accent-dark);
+      text-decoration: none;
+    }
+
+    .footer-note a:hover { text-decoration: underline; }
   </style>
 </head>
+
 <body>
   <div class="page">
     <header>
@@ -604,17 +619,24 @@
       </div>
       <h1>Paycheck Take Home Calculator</h1>
       <p class="subheading">
-        Use this free paycheck take home calculator to estimate your net pay after federal, state, and FICA taxes.
-        Works for salary and hourly employees in all 50 US states.
+        Estimate your net pay after federal, state, and FICA taxes — then adjust for 401(k), HSA/FSA, and benefits.
+        Built for quick planning in all 50 U.S. states.
       </p>
+
+      <nav class="top-links" aria-label="Jump links">
+        <a href="#calculator">Calculator</a>
+        <a href="#guide">Take-home pay guide</a>
+        <a href="#faq">FAQ</a>
+        <a href="#states">States</a>
+      </nav>
     </header>
 
-    <main class="layout">
+    <main class="layout" id="calculator">
       <!-- Calculator Card -->
       <section class="card" aria-labelledby="calc-heading">
         <h2 id="calc-heading">Estimate your paycheck after taxes</h2>
         <p class="helper">
-          Enter your gross pay, state, pay frequency, and deductions. This paycheck calculator will estimate your take-home pay after taxes and deductions.
+          Enter your gross pay, state, pay frequency, and deductions. This tool estimates your take-home pay (net pay) and shows a clear breakdown.
         </p>
 
         <!-- Pay type -->
@@ -771,8 +793,14 @@
           </div>
         </div>
 
+        <div class="callout" role="note">
+          <strong>Tip:</strong> If your paycheck feels “too low,” the biggest culprits are usually (1) filing status / W-4 withholding,
+          (2) benefit premiums, and (3) retirement contributions. Use the toggles above to model those items.
+        </div>
+
         <p class="disclaimer">
-          This take-home pay calculator provides a simplified estimate only and does not replace tax or payroll advice. Actual paychecks may differ.
+          This take-home pay calculator provides a simplified estimate for planning only. Actual paychecks vary by employer payroll rules,
+          local taxes, and the deductions on your pay stub.
         </p>
 
         <button id="calculateBtn" class="btn-primary" type="button">
@@ -786,7 +814,7 @@
       <section class="card" aria-live="polite">
         <h2>Take-home pay estimate</h2>
         <p class="helper">
-          This section shows your estimated net pay per paycheck, per month, and per year based on your inputs.
+          See your estimated net pay per paycheck, per month, and per year — plus a transparent breakdown.
         </p>
 
         <div class="result-header">
@@ -796,9 +824,7 @@
               Per paycheck · Monthly: <strong>$0.00</strong> · Yearly: <strong>$0.00</strong>
             </p>
           </div>
-          <div class="result-pill">
-            Estimated net pay
-          </div>
+          <div class="result-pill">Estimated net pay</div>
         </div>
 
         <div class="table-wrapper">
@@ -859,71 +885,152 @@
           Enter your information on the left and click “Calculate” to see your estimated paycheck after taxes and deductions.
         </div>
 
-        <!-- AdSense slot -->
+        <!-- NOTE: removed “ad space reserved” language to avoid AdSense low-value signals during review -->
+        <!-- When approved, you can add your AdSense unit here. -->
+        <!--
         <div class="adsense-slot">
-          <!-- AdSense unit placeholder. Uncomment data-ad-slot and set your slot ID when you're ready.
           <ins class="adsbygoogle"
                style="display:block"
                data-ad-client="ca-pub-8509398148166447"
-               <!-- data-ad-slot="YOUR_AD_SLOT_ID" -->
+               data-ad-slot="YOUR_AD_SLOT_ID"
                data-ad-format="auto"
                data-full-width-responsive="true"></ins>
           <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
-          -->
-          <em>Ad space reserved. Add your AdSense slot ID here when you're ready to run ads.</em>
         </div>
+        -->
       </section>
     </main>
 
-    <!-- SEO Content: How it works + scenarios + FAQ -->
-    <section class="card faq-card seo-section">
-      <h2>How this paycheck take home calculator works</h2>
+    <!-- Trust / About -->
+    <section class="card seo-section" id="about">
+      <h2>About PaycheckTakeHome.com</h2>
       <p>
-        This paycheck take home calculator starts with your gross pay, subtracts any pre-tax deductions such as 401(k) and HSA,
-        then estimates federal income tax, state income tax, Social Security, and Medicare. Finally, it subtracts any post-tax
-        deductions you enter, such as health insurance or other benefits, to estimate your net pay or take-home pay.
+        PaycheckTakeHome.com is a free, independent paycheck take-home (net pay) calculator built to make paychecks easier to understand.
+        Many payroll tools feel like a black box — you type numbers in, and you get a result with no explanation.
+        This site focuses on transparency: you can see how gross pay, deductions, and the major tax categories impact your final take-home pay.
+      </p>
+      <p>
+        This calculator is designed for planning and education. It is not affiliated with any employer, payroll provider, or government agency.
+        If you need an official figure, always use your pay stub and your employer’s payroll portal as the source of truth.
+      </p>
+      <div class="muted-box">
+        <strong>How this tool estimates taxes:</strong>
+        <ul class="bullets">
+          <li><strong>Federal income tax:</strong> simplified brackets based on filing status.</li>
+          <li><strong>State income tax:</strong> an approximate effective rate by state (good for rough planning).</li>
+          <li><strong>FICA:</strong> standard Social Security and Medicare rates (with the Social Security wage base applied).</li>
+          <li><strong>Deductions:</strong> pre-tax (401(k), HSA/FSA, other) and post-tax (benefits) entered by you.</li>
+        </ul>
+      </div>
+      <p>
+        Built by an independent software engineer and personal finance enthusiast who wanted a clearer way to model paychecks without confusing payroll jargon.
+      </p>
+    </section>
+
+    <!-- Long-form guide (key for AdSense “value”) -->
+    <section class="card seo-section" id="guide">
+      <h2>The complete guide to understanding your take-home pay</h2>
+      <p>
+        “Take-home pay” (also called <strong>net pay</strong>) is the amount that actually lands in your bank account after payroll runs.
+        Most people know gross pay, but gross pay is rarely the number that matters when you’re budgeting for rent, childcare, groceries,
+        or deciding whether a new job offer is truly a raise.
       </p>
 
-      <h3>What’s included in your net pay calculation</h3>
+      <h3>Gross pay vs. taxable pay vs. net pay</h3>
       <p>
-        For most users in the United States, this net pay calculator includes:
+        A paycheck has a few different “layers,” and the labels on your pay stub can be confusing:
       </p>
-      <ul class="seo-scenarios-list">
-        <li>Gross salary or hourly pay converted to annual income</li>
-        <li>Estimated federal income tax based on simplified tax brackets</li>
-        <li>Approximate state income tax using an effective rate for your state</li>
-        <li>Standard Social Security and Medicare (FICA) payroll taxes</li>
-        <li>Optional pre-tax deductions: 401(k), HSA/FSA, and other pre-tax benefits</li>
-        <li>Optional post-tax deductions: health insurance, dental, and other after-tax items</li>
+      <ul class="bullets">
+        <li><strong>Gross pay:</strong> your earnings before anything is taken out (salary per period, or hourly × hours).</li>
+        <li><strong>Pre-tax deductions:</strong> items that typically reduce your taxable income (like traditional 401(k) and many HSA/FSA plans).</li>
+        <li><strong>Taxable income (for withholding):</strong> the amount payroll uses to estimate federal/state income taxes.</li>
+        <li><strong>Payroll taxes (FICA):</strong> Social Security and Medicare; these are not the same as federal income tax.</li>
+        <li><strong>Post-tax deductions:</strong> items taken out after taxes (some benefits, garnishments, or other after-tax programs).</li>
+        <li><strong>Net pay:</strong> what you take home.</li>
       </ul>
 
-      <h2>Example take-home pay calculations</h2>
+      <h3>Why two people with the same salary take home different amounts</h3>
       <p>
-        Here are a few sample scenarios to show how this paycheck calculator can estimate your take-home pay:
+        If you and a coworker both make $75,000, you might still see very different paychecks. The most common reasons are:
+      </p>
+      <ul class="bullets">
+        <li><strong>W-4 withholding choices:</strong> filing status, dependents, and additional withholding change how much federal tax is withheld.</li>
+        <li><strong>State and local taxes:</strong> some states have no income tax, while others are meaningfully higher. Some cities add local tax too.</li>
+        <li><strong>Benefits:</strong> health/dental/vision premiums can be $50 or $500+ per paycheck depending on plan and family coverage.</li>
+        <li><strong>Retirement savings:</strong> a 5–10% 401(k) contribution can noticeably reduce take-home pay (while often lowering income tax).</li>
+        <li><strong>Pay frequency:</strong> weekly vs biweekly vs semi-monthly affects the size of each check even if annual pay is the same.</li>
+      </ul>
+
+      <div class="callout" role="note">
+        <strong>Reality check:</strong> A paycheck “feeling low” does not automatically mean your employer is wrong.
+        It often comes down to benefit premiums and withholding settings.
+      </div>
+
+      <h3>How federal withholding works (plain English)</h3>
+      <p>
+        Federal income tax on a paycheck is an estimate — it’s payroll withholding based on your W-4 information.
+        The IRS ultimately reconciles everything when you file your tax return. That’s why two important things can be true at the same time:
+      </p>
+      <ul class="bullets">
+        <li>Your paycheck withholding can look high or low during the year.</li>
+        <li>Your refund (or amount owed) at tax time depends on total income, deductions, credits, and filing choices.</li>
+      </ul>
+      <p>
+        This calculator uses simplified federal brackets to provide a planning estimate. For the most precise result,
+        compare your estimate against a real pay stub and adjust the “other deductions” fields to match your situation.
       </p>
 
-      <h3>Example 1: $50,000 salary in Pennsylvania</h3>
+      <h3>FICA taxes (Social Security & Medicare) — why they surprise people</h3>
       <p>
-        A single filer earning $50,000 per year in Pennsylvania, paid bi-weekly with no pre-tax deductions,
-        might see an estimated take-home pay of roughly 70–78% of gross pay after federal, state, and FICA taxes.
-        Exact numbers depend on your specific deductions, but this tool will give you a quick paycheck after-tax estimate.
+        FICA taxes are separate from income tax and are withheld on most wages:
+      </p>
+      <ul class="bullets">
+        <li><strong>Social Security:</strong> a standard percentage up to the annual wage base (a cap that changes over time).</li>
+        <li><strong>Medicare:</strong> a standard percentage with additional rules for higher incomes.</li>
+      </ul>
+      <p>
+        Because these are “flat” payroll taxes, they can feel more noticeable at lower and middle incomes than people expect.
       </p>
 
-      <h3>Example 2: $75,000 salary in California with 5% 401(k)</h3>
+      <h3>401(k) and HSA: how they change your paycheck</h3>
       <p>
-        A single filer in California earning $75,000 per year and contributing 5% of each paycheck to a 401(k) will reduce
-        their taxable income while also lowering their take-home pay. This calculator helps you see how much of your paycheck
-        you keep after your 401(k) contribution and California state income taxes.
+        Traditional 401(k) contributions are usually pre-tax for income tax purposes, which means they can reduce federal and state income taxes.
+        However, they still reduce your take-home pay because the money is going into savings instead of your bank account.
+      </p>
+      <p>
+        HSAs (and some FSAs) can also be pre-tax. If your employer offers an HSA, it’s often one of the most tax-efficient ways to save —
+        but again, it reduces your paycheck today in exchange for savings and potential tax advantages.
       </p>
 
-      <h3>Example 3: $20 per hour in Texas, 40 hours per week</h3>
+      <h3>When paycheck calculators are wrong</h3>
       <p>
-        An hourly worker making $20 per hour and working 40 hours per week earns about $41,600 per year before taxes.
-        In a state like Texas with no state income tax, your take-home pay after federal tax and FICA will generally be
-        higher than in a state that taxes income. Use this tool as a paycheck calculator to see your net pay per paycheck.
+        Online paycheck calculators can differ from your pay stub for a few normal reasons:
       </p>
+      <ul class="bullets">
+        <li><strong>Local taxes:</strong> city/county taxes aren’t included here.</li>
+        <li><strong>Employer-specific payroll rules:</strong> imputed income, cafeteria plans, special deductions.</li>
+        <li><strong>Overtime, bonuses, commissions:</strong> many employers withhold bonuses differently than regular wages.</li>
+        <li><strong>Pre-tax vs post-tax classification:</strong> your benefits might be pre-tax at one employer and post-tax at another.</li>
+      </ul>
+      <p>
+        Use this tool for planning and comparisons: “If I increase my 401(k) from 4% to 8%, what happens to my net pay?”
+        or “How does a move from a no-tax state to a taxed state change my monthly take-home pay?”
+      </p>
+
+      <h3>How to use this calculator for the best estimate</h3>
+      <ol class="bullets">
+        <li>Start with your gross pay (salary or hourly).</li>
+        <li>Choose your pay frequency and state.</li>
+        <li>Enter 401(k) % and any HSA/FSA amounts (if applicable).</li>
+        <li>Enter benefit premiums in the post-tax section if they come out after taxes (or use “other pre-tax” if your plan is pre-tax).</li>
+        <li>Compare your result to a real pay stub and fine-tune “other deductions” to match reality.</li>
+      </ol>
+
+      <div class="muted-box">
+        <strong>Not tax advice:</strong> This site provides general education and simplified estimates. For official figures, use your pay stub and consult a tax professional if needed.
+      </div>
     </section>
 
     <!-- FAQ / People also ask -->
@@ -979,7 +1086,7 @@
         <p>
           To calculate your paycheck after taxes manually, start with your gross pay for the period, subtract pre-tax deductions,
           estimate federal and state income taxes, calculate Social Security and Medicare, then subtract any post-tax deductions.
-          This online paycheck takes-home calculator performs that estimate automatically based on your inputs.
+          This calculator performs that estimate automatically based on your inputs.
         </p>
       </details>
 
@@ -993,12 +1100,14 @@
     </section>
 
     <!-- State SEO section -->
-    <section class="card seo-section">
+    <section class="card seo-section" id="states">
       <h2>State-specific paycheck take home calculations</h2>
       <p>
-        This net pay calculator works in every U.S. state. Choose your state in the dropdown above to estimate your paycheck after taxes:
+        This net pay calculator works in every U.S. state. Choose your state in the dropdown above to estimate your paycheck after taxes.
+        (These are simplified planning estimates; local taxes and employer-specific deductions can change results.)
       </p>
-      <ul class="state-list">
+
+      <ul class="state-list" aria-label="States list">
         <li><span>AL</span> – Alabama paycheck calculator</li>
         <li><span>AK</span> – Alaska paycheck calculator</li>
         <li><span>AZ</span> – Arizona paycheck calculator</li>

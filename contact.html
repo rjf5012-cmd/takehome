@@ -1,0 +1,315 @@
+<!-- =========================
+     contact.html
+     ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | PaycheckTakeHome.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact PaycheckTakeHome.com with feedback, questions, or corrections about the paycheck take-home calculator." />
+
+  <link rel="canonical" href="https://paychecktakehome.com/contact.html" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="alternate icon" href="/favicon.ico" />
+
+  <meta name="robots" content="index,follow" />
+
+  <!-- Google AdSense (keep for verification; avoid placing ad units on the contact page during review) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8509398148166447"
+    crossorigin="anonymous"></script>
+
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card-bg: #ffffff;
+      --accent: #2563eb;
+      --accent-soft: #e0ebff;
+      --accent-dark: #1d4ed8;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --danger: #dc2626;
+      --shadow-soft: 0 20px 40px rgba(15, 23, 42, 0.08);
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #eef2ff 0%, #f9fafb 50%, #f3f4ff 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    header h1 {
+      font-size: clamp(1.8rem, 3vw, 2.2rem);
+      margin: 0 0 8px;
+      letter-spacing: -0.03em;
+    }
+
+    header p.subheading {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    header .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.08);
+      color: var(--accent-dark);
+      font-size: 0.78rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    header .pill span.dots {
+      display: inline-flex;
+      gap: 2px;
+    }
+
+    header .pill span.dots span {
+      width: 4px;
+      height: 4px;
+      border-radius: 999px;
+      background: var(--accent-dark);
+      opacity: 0.7;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-soft);
+      padding: 20px 18px;
+      border: 1px solid rgba(148, 163, 184, 0.18);
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 1.1rem;
+    }
+
+    .helper {
+      margin: 0 0 14px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 16px;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 780px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+
+    label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #374151;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px 10px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      font-size: 0.95rem;
+      outline: none;
+      background-color: #f9fafb;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+    }
+
+    textarea { min-height: 140px; resize: vertical; }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.2);
+      background-color: #ffffff;
+    }
+
+    .full { grid-column: 1 / -1; }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 11px 12px;
+      margin-top: 10px;
+      border-radius: 999px;
+      border: none;
+      outline: none;
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      color: #ffffff;
+      font-size: 0.98rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+      transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 16px 30px rgba(37, 99, 235, 0.45);
+      filter: brightness(1.02);
+    }
+
+    .small-note {
+      margin-top: 10px;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    .muted-box {
+      background: #f9fafb;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px;
+      margin-top: 14px;
+      color: #374151;
+      font-size: 0.9rem;
+    }
+
+    .muted-box ul {
+      margin: 8px 0 0;
+      padding-left: 18px;
+      color: #4b5563;
+    }
+
+    .footer-note {
+      margin-top: 20px;
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .footer-note a {
+      color: var(--accent-dark);
+      text-decoration: none;
+    }
+
+    .footer-note a:hover { text-decoration: underline; }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <div class="pill">
+        <span class="dots"><span></span><span></span><span></span></span>
+        PaycheckTakeHome.com · Contact
+      </div>
+      <h1>Contact</h1>
+      <p class="subheading">
+        Feedback, questions, or a correction to the calculator? Send a note below.
+      </p>
+    </header>
+
+    <main class="card">
+      <h2>Send a message</h2>
+      <p class="helper">
+        Use this form to reach PaycheckTakeHome.com. We read every message, but response times can vary.
+        Please don’t include sensitive personal information (like SSNs or full bank details).
+      </p>
+
+      <!--
+        ✅ Works immediately as a simple "mailto" fallback (no backend needed)
+        - If you later add a backend (Cloudflare Workers, Netlify Forms, etc.), replace the form action accordingly.
+      -->
+      <form action="mailto:paychecktakehome@gmail.com" method="post" enctype="text/plain">
+        <div class="grid">
+          <div>
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="e.g., Ryan" autocomplete="name" />
+          </div>
+
+          <div>
+            <label for="email">Email (optional)</label>
+            <input id="email" name="email" type="email" placeholder="e.g., you@email.com" autocomplete="email" />
+          </div>
+
+          <div class="full">
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic">
+              <option value="feedback" selected>General feedback</option>
+              <option value="bug">Bug / incorrect result</option>
+              <option value="feature">Feature request</option>
+              <option value="content">Content correction</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us what you’re seeing, what you expected, and any helpful context."></textarea>
+          </div>
+
+          <div class="full">
+            <button class="btn-primary" type="submit">Send message</button>
+            <div class="small-note">
+              If your email client doesn’t open automatically, you can email us directly at
+              <a href="mailto:paychecktakehome@gmail.com">paychecktakehome@gmail.com</a>.
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <div class="muted-box">
+        <strong>Helpful details to include (if relevant):</strong>
+        <ul>
+          <li>Your pay type (salary or hourly) and pay frequency</li>
+          <li>Your state and filing status</li>
+          <li>Any deductions you entered (401(k) %, HSA/FSA, benefits)</li>
+          <li>A screenshot of your result table (optional)</li>
+        </ul>
+      </div>
+    </main>
+
+    <p class="footer-note">
+      © <span id="yearSpan"></span> PaycheckTakeHome.com ·
+      <a href="/">Calculator</a> ·
+      <a href="/how-paychecks-work.html">How paychecks work</a> ·
+      <a href="/privacy.html">Privacy Policy</a> ·
+      <a href="/terms.html">Terms of Use</a> ·
+      <a href="/contact.html" aria-current="page">Contact</a><br />
+      This site is for informational purposes only and does not constitute financial, tax, or legal advice.
+    </p>
+  </div>
+
+  <script>
+    const yearSpan = document.getElementById('yearSpan');
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
